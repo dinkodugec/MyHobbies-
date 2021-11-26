@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Hello Laravel from Županja :)
+                    Hello Laravel from {{auth()->user()->email ?? ""}} :)
                 </div>
 
                 <div class="links">
