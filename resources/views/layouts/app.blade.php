@@ -78,21 +78,21 @@
         </nav>
 
         <main class="py-4">
-               @isset($message_sucess)
-                <div class="container">
-                    <div class="alert alert-success" role="alert">
-                        {{!! message_success !!}}
-                    </div>
+        @isset($message_success)
+            <div class="container">
+                <div class="alert alert-success" role="alert">
+                    {!! $message_success !!}
                 </div>
-                @endisset
+            </div>
+            @endisset
 
-                @isset($message_warning)
+            @isset($message_warning)
                 <div class="container">
                     <div class="alert alert-warning" role="alert">
-                        {{!! message_warning !!}}
+                        {!! $message_warning !!}
                     </div>
                 </div>
-                @endisset
+            @endisset
 
             @if($errors->any())
                 <div class="container">
