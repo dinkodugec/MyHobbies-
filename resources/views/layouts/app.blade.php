@@ -12,6 +12,8 @@
     
     <title>@yield('page_title', 'MyHobbies')</title>
 
+    
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -39,6 +41,7 @@
                         <li><a class="nav-link{{ Request::is('/') ? ' active' : '' }}" href="/">Start</a></li>
                        <li><a class="nav-link{{ Request::is('info') ? ' active' : '' }}" href="/info">Info</a></li>
                        <li><a class="nav-link{{ Request::is('hobby*') ? ' active' : '' }}" href="/hobby">Hobbies</a></li>
+                       <li><a class="nav-link{{ Request::is('tags*') ? ' active' : '' }}" href="/tags">Tags</a></li>
                    </ul>
 
                     <!-- Right Side Of Navbar -->
