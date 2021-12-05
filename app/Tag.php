@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Tag extends Model
 {
     
-    protected $fillable = [
+    protected $fillable = [   //7.korak
         'name', 'style',
     ];
 }

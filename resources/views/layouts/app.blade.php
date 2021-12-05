@@ -41,7 +41,7 @@
                         <li><a class="nav-link{{ Request::is('/') ? ' active' : '' }}" href="/">Start</a></li>
                        <li><a class="nav-link{{ Request::is('info') ? ' active' : '' }}" href="/info">Info</a></li>
                        <li><a class="nav-link{{ Request::is('hobby*') ? ' active' : '' }}" href="/hobby">Hobbies</a></li>
-                       <li><a class="nav-link{{ Request::is('tags*') ? ' active' : '' }}" href="/tags">Tags</a></li>
+                       <li><a class="nav-link{{ Request::is('tag*') ? ' active' : '' }}" href="/tag">Tags</a></li> <!-- 1.step to creaate Tags, 2.step php artisan make:model Tag -a -->
                    </ul>
 
                     <!-- Right Side Of Navbar -->
