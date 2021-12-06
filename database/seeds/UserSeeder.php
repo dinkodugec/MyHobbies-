@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+
 use Illuminate\Support\Facades\DB;  /*  insert things in database and if use DB we must manual set timestamps*/
 
 class UserSeeder extends Seeder
