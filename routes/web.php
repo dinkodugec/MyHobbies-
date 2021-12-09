@@ -35,3 +35,8 @@ Route::resource('tag', 'TagController'); // 3.step:  route for TagController
 Route::resource('user', 'UserController');
 
 Route::get('/hobby/tag/{tag_id}', 'hobbyTagController@getFilteredHobbies')->name('hobby_tag');  // ROUTES THAT POINT TO FUNCTION IN HOBBYTAGCONTROLLER
+
+
+// Attach / Detach Tags to Hobbies  2.step 
+Route::get('/hobby/{hobby_id}/tag/{tag_id}/attach', 'hobbyTagController@attachTag');
+Route::get('/hobby/{hobby_id}/tag/{tag_id}/detach', 'hobbyTagController@detachTag');
