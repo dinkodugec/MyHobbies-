@@ -43,3 +43,6 @@ Route::get('/hobby/{hobby_id}/tag/{tag_id}/detach', 'hobbyTagController@detachTa
 
 /* Filtered View */
 Route::get('/hobby/tag/{tag_id}', 'hobbyTagController@getFilteredHobbies')->name('hobby_tag');
+
+// Delete Images of Hobby
+Route::get('/delete-images/hobby/{hobby_id}', 'HobbyController@deleteImages');
